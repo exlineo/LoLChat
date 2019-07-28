@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.slim.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:400,700&display=swap" rel="stylesheet">
         
         <style>
@@ -13,17 +13,21 @@
             }
             body{
                 display:flex;
+                flex-flow:column wrap;
             }
             section{
                 margin:10px auto;
                 display:flex;
                 flex-flow:column wrap;
             }
-            select{
+            select, input{
                 padding:5px;
                 border:none;
                 width:250px;
                 margin:10px auto;
+            }
+            #chat{
+                width:100%;
             }
             #chat ul{
                 border:double 2px black;
@@ -34,6 +38,15 @@
                 margin:5px;
                 list-style: none;
             }
+            #infos{
+                max-height:200px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width:100%;
+            }
+            .self{
+                text-align: right;
+            }
         </style>
     </head>
     <body>
@@ -41,6 +54,9 @@
             <h1>Loool</h1>
             <h2>Allo quoi, t'as un chat et tu fais pas Loool</h2>
             <article id="chat"></article>
+        </section>
+        <section>
+            <article id="infos"></article>
         </section>
         <script src="js/lolchat.js"></script>
     </body>
