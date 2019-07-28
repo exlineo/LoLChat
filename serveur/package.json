@@ -1,0 +1,22 @@
+{
+    "name": "serveur-lolcat",
+    "version": "0.0.1",
+    "description": "Application de chat pour montrer le fonctionnement de Web Socket avec socket.io",
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/exlineo/LoLChat.git"
+    },
+    "keywords": [
+        "websocket",
+        "socket.io",
+        "html5",
+        "Javascript"
+    ],
+    "author": "exlineo",
+    "license": "MIT",
+    "homepage": "https://gitlab.com/exlineo/LoLChat#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "socket.io": "^2.2.0"
+    }
+}
